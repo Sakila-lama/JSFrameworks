@@ -8,7 +8,7 @@ This is a personal portfolio website built using Node.js, Express, and Handlebar
 The website is designed to be responsive and user-friendly, providing an optimal viewing experience across a range of devices.
 
 ## Live Site
-You can visit the live site [here]().
+You can visit the live site [here](https://js-frameworks.onrender.com).
 
 ## External Sources and Tools Utilized
 - **Bootstrap**: Used for responsive design and layout.
@@ -27,4 +27,4 @@ You can visit the live site [here]().
 Git repository:
    
    https://github.com/Sakila-lama/COMP2068JSFrameworks/tree/main/ASSIGNMENT01
-   
+
