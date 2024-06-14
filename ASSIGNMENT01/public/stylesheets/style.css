@@ -173,6 +173,7 @@ a {
   color: #ae8686;
 }
 
+/* Styling for contact */
 .contact-container {
   width: 80%;
   margin: auto;
@@ -239,7 +240,7 @@ a {
 
 /* Apply hover effect to the button */
 .submit-container button.send {
-  background-color: #52c6cb;
+  background-color:  #007bff;
   /* Default background color */
   color: white;
   /* Default text color */
