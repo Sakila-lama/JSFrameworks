@@ -6,3 +6,318 @@ body {
 a {
   color: #00B7FF;
 }
+/* General container styling for My bio-home */
+#home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Styling for the bio information on the left */
+.my-bio {
+  flex: 1;
+  max-width: 50%;
+}
+
+.my-bio h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.my-bio .Bio {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.my-bio p {
+  margin-bottom: 10px;
+}
+
+.bio-btn {
+  margin-top: 20px;
+}
+
+.bio-btn .about-me {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.bio-btn .about-me:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the profile photo on the right */
+.profile-photo {
+  flex: 1;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  position: relative; /* Needed for the glow effect */
+}
+
+.profile-photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.5), 0 0 30px rgba(0, 123, 255, 0.5), 0 0 45px rgba(0, 123, 255, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.profile-photo img:hover {
+  box-shadow: 0 0 25px rgba(0, 123, 255, 0.8), 0 0 50px rgba(0, 123, 255, 0.8), 0 0 75px rgba(0, 123, 255, 0.8);
+}
+
+/* General styling for the projects section */
+.projects-section {
+  padding: 20px;
+}
+
+.projects-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Flexbox container for cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Styling for individual cards */
+.card {
+  flex: 1 1 calc(33.333% - 20px); /* Flex-grow, flex-shrink, flex-basis */
+  margin: 10px;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.face {
+  position: relative;
+  padding: 20px;
+}
+
+.face .outer {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.card-img-1 {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.btn1 {
+  text-align: center;
+}
+
+.btn1 a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn1 a:hover {
+  background-color: #0056b3;
+}
+
+/* Skills Section */
+.skills-container {
+  width: 80%;
+  margin: auto;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-container h2 {
+  align-self: flex-start; /* Align the heading to the left */
+  margin-left: 20px; /* Adjust the value to match the margin of other elements */
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping for better responsiveness */
+  margin-top: 1rem;
+  gap: 20px;
+}
+
+.skills li {
+  list-style: none;
+  font-size: 3.5rem;
+  color: #ae8686;
+}
+
+.contact-container {
+  width: 80%;
+  margin: auto;
+  padding: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8697a2;
+}
+
+.contact-information {
+  flex: 1;
+}
+
+.contactForm {
+  flex: 1;
+}
+
+.contact-information h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.contact-information p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.socialIcons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.socialIcons li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1.8rem;
+}
+
+/* contact form */
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm label {
+  display: none;
+}
+
+.contactForm input,
+.contactForm textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #83e2e7;
+  border-radius: 4px;
+}
+
+.contactForm .submit-container {
+  text-align: center;
+
+}
+
+/* Apply hover effect to the button */
+.submit-container button.send {
+  background-color: #52c6cb;
+  /* Default background color */
+  color: white;
+  /* Default text color */
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-container button.send:hover {
+  background-color: #83e2e7;
+  /* Background color on hover */
+  color: #fff;
+  /* Text color on hover */
+}
+
+
+/* General container styling for About Me page*/
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Styling for the bio information on the left */
+.aboutMe {
+  flex: 1;
+  max-width: 50%;
+}
+
+.aboutMe h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.aboutMe .Bio {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.aboutMe p {
+  margin-bottom: 10px;
+}
+
+.bio-btn1 {
+  margin-top: 20px;
+}
+
+.bio-btn1 .connect-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.bio-btn1 .connect-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the profile photo on the right */
+.profile-photo1 {
+  flex: 1;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  position: relative; /* Needed for the glow effect */
+}
+
+
+.profile-photo1 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.5), 0 0 30px rgba(0, 123, 255, 0.5), 0 0 45px rgba(0, 123, 255, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.profile-photo1 img:hover {
+  box-shadow: 0 0 25px rgba(0, 123, 255, 0.8), 0 0 50px rgba(0, 123, 255, 0.8), 0 0 75px rgba(0, 123, 255, 0.8);
+}
