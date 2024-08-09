@@ -1,8 +1,143 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* Center the header title */
+.header h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 20px 0;
 }
 
-a {
-  color: #00B7FF;
+/* Top section containing the search bar and navigation */
+.top-section {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the search bar */
+.search-bar {
+  flex-grow: 1;
+}
+
+.search-bar .form-control {
+  max-width: 300px;
+}
+
+/* Navigation styles */
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Hero section styling */
+.hero-section {
+  height: calc(100vh - 120px); /* Adjust based on your header and top-section height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style for the Book Online button */
+.btn-dark {
+  font-size: 1.25rem;
+  padding: 10px 30px;
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+.footer-heading {
+  font-weight: bold;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.footer-heading::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: #e74c3c;
+  left: 0;
+  bottom: -10px;
+}
+
+/* Footer styles */
+.footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer ul li i {
+  margin-right: 10px;
+  color: #e74c3c;
+}
+
+.footer .form-control {
+  margin-bottom: 15px;
+  border-radius: 0;
+}
+
+.footer .btn-primary {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  border-radius: 0;
+}
+
+.footer .text-center {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* Social icons */
+.social-icon {
+  margin-right: 10px;
+  color: #e74c3c;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.social-icon:hover {
+  color: #c0392b;
+}
+
+/* Responsive styles */
+@media (max-width: 767.98px) {
+  .social-icon {
+    margin-right: 5px;
+  }
+
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer-heading {
+    font-size: 16px;
+  }
+
+  .footer ul li {
+    font-size: 14px;
+  }
+
+  .social-icon {
+    font-size: 16px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    margin-top: 10px;
+  }
 }
