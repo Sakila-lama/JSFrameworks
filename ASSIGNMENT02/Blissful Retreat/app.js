@@ -1,14 +1,23 @@
+require('dotenv').config();
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var bodyParser = require('body-parser'); //added 
+var hbs = require('hbs'); // added
+
+// Require the MongoDB configuration
+var mongoose = require('./config');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+
+// Register the ifEquals helper with Handlebars
+hbs.registerHelper('ifEquals', function(arg1, arg2, options) {
+  return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

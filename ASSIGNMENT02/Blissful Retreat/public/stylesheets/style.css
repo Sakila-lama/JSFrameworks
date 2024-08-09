@@ -199,14 +199,14 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Service selection */
+/* Service selection 
 .selected-service {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 15px;
-  margin-bottom: 15px; /* Added for spacing */
+  margin-bottom: 15px; 
   background-color: #f8f9fa;
-}
+} 
 
 .selected-service strong {
   font-size: 18px;
@@ -218,10 +218,65 @@ h2 {
 }
 
 /* Button to add another service */
-.btn-dark {
+/*.btn-dark {
   font-size: 1rem;
   padding: 10px 20px;
+} */
+
+
+/* Dropdown styling for selecting a service */
+#service-select {
+  max-width: 300px;
+  margin-left: 15px;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
+
+/* Service selection area */
+.selected-service {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px; /* Space between services */
+  background-color: #f8f9fa;
+}
+
+.selected-service strong {
+  font-size: 18px;
+}
+
+.selected-service span {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+/* Service provider dropdown styling */
+.selected-service select {
+  max-width: 200px;
+  font-size: 16px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+/* Button styling */
+.btn-dark {
+  background-color: #343a40;
+  border-color: #343a40;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #23272b;
+}
+
+
 
 /* Calendar and slots container */
 .calendar-container {
