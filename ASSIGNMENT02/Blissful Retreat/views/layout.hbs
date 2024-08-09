@@ -1,81 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{{title}}</title>
-    <link
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"/>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-    <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-  </head>
-  <body>
-    <header class="header text-center">
-      <h1>Blissful Retreat</h1>
-    </header>
-    <div class="top-section d-flex justify-content-between align-items-center">
-      <div class="search-bar">
-        <input type="text" class="form-control" placeholder="Search" />
-      </div>
-      <nav class="navigation">
-        <ul class="nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/spa">Spa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/book">Book Online</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/login">Log In</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#">Shop</a> -->
-          </li>
-        </ul>
-      </nav>
-    </div>
-    {{{body}}}
-   <footer class="footer bg-light">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <h5 class="footer-heading">Address</h5>
-        <ul class="list-unstyled">
-          <li><i class="fas fa-envelope"></i> reception_blissful@gmail.com</li>
-          <li><i class="fas fa-map-marker-alt"></i> A108 Adam Street, Barrie, ON</li>
-          <li><i class="fas fa-phone"></i> +1 647 55488 55</li>
-          <li>
-            <a href="#" class="social-icon">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="social-icon">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <h5 class="footer-heading">Contact Us</h5>
-        <form>
-          <div class="form-group">
-            <input type="email" class="form-control" placeholder="Enter an Email" />
-          </div>
-          <div class="form-group">
-            <textarea class="form-control" rows="2" placeholder="Write Message..."></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send</button>
-        </form>
-      </div>
-    </div>
-    <div class="text-center mt-3">
-      <p>All rights reserved by Blissful Retreat © 2024.</p>
-    </div>
-  </div>
-</footer>
 
-  </body>
+<head>
+  <title>{{title}}</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- FullCalendar CSS -->
+  <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css' rel='stylesheet' />
+
+  <!-- FullCalendar JS -->
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js'></script>
+
+</head>
+
+<body>
+  <header class="header text-center">
+    <h1>Blissful Retreat</h1>
+  </header>
+  <div class="top-section d-flex justify-content-between align-items-center">
+    <div class="search-bar">
+      <input type="text" class="form-control" placeholder="Search" />
+    </div>
+    <nav class="navigation">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/spa">Spa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/book">Book Online</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login">Log In</a>
+        </li>
+        <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a> -->
+        </li>
+      </ul>
+    </nav>
+  </div>
+  {{{body}}}
+  <footer class="footer bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5 class="footer-heading">Address</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-envelope"></i> reception_blissful@gmail.com</li>
+            <li><i class="fas fa-map-marker-alt"></i> A108 Adam Street, Barrie, ON</li>
+            <li><i class="fas fa-phone"></i> +1 647 55488 55</li>
+            <li>
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5 class="footer-heading">Contact Us</h5>
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Enter an Email" />
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="2" placeholder="Write Message..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <p>All rights reserved by Blissful Retreat © 2024.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>

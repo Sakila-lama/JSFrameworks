@@ -1,5 +1,159 @@
-<div class="container">
-  <h1>Book Online</h1>
-  <p>Here you can book your appointments.</p>
-  <!-- Add booking form -->
+<div class="container mt-5">
+  <h2 class="mb-4 text-center">Select a Facial Treatment</h2>
+  <form action="/booking-details" method="POST" class="treatment-form">
+    <div class="list-group">
+      <!-- Treatment 1 -->
+      <label class="list-group-item d-flex justify-content-between align-items-center treatment-option">
+        <div class="treatment-info">
+          <strong>FHF Hydration Cascade Facial</strong>
+          <br />
+          $130.00
+          <span class="text-muted">50min</span>
+        </div>
+        <input type="radio" name="treatment" value="fhf-hydration-cascade" class="form-check-input" />
+      </label>
+
+      <!-- Treatment 2 -->
+      <label class="list-group-item d-flex justify-content-between align-items-center treatment-option">
+        <div class="treatment-info">
+          <strong>FHF Mighty Tighty Facial</strong>
+          <br />
+          $130.00
+          <span class="text-muted">50min</span>
+        </div>
+        <input type="radio" name="treatment" value="fhf-mighty-tighty" class="form-check-input" />
+      </label>
+
+      <!-- Treatment 3 -->
+      <label class="list-group-item d-flex justify-content-between align-items-center treatment-option">
+        <div class="treatment-info">
+          <strong>FHF Porefectly Calm Facial</strong>
+          <br />
+          $130.00
+          <span class="text-muted">50min</span>
+        </div>
+        <input type="radio" name="treatment" value="fhf-porefectly-calm" class="form-check-input" />
+      </label>
+
+      <!-- Treatment 4 -->
+      <label class="list-group-item d-flex justify-content-between align-items-center treatment-option">
+        <div class="treatment-info">
+          <strong>FHF Purely Degunked Facial</strong>
+          <br />
+          $130.00
+          <span class="text-muted">50min</span>
+        </div>
+        <input type="radio" name="treatment" value="fhf-purely-degunked" class="form-check-input" />
+      </label>
+
+      <!-- Treatment 5 -->
+      <label class="list-group-item d-flex justify-content-between align-items-center treatment-option">
+        <div class="treatment-info">
+          <strong>FHF Radiance Maker Facial</strong>
+          <br />
+          $130.00
+          <span class="text-muted">50min</span>
+        </div>
+        <input type="radio" name="treatment" value="fhf-radiance-maker" class="form-check-input" />
+      </label>
+
+      <!-- Treatment 6 -->
+      <label class="list-group-item d-flex justify-content-between align-items-center treatment-option">
+        <div class="treatment-info">
+          <strong>Glo Calm Facial</strong>
+          <br />
+          $150.00
+          <span class="text-muted">60min</span>
+        </div>
+        <input type="radio" name="treatment" value="glo-calm" class="form-check-input" />
+      </label>
+
+      <!-- Treatment 7 -->
+      <label class="list-group-item d-flex justify-content-between align-items-center treatment-option">
+        <div class="treatment-info">
+          <strong>Glo Clear Facial</strong>
+          <br />
+          $150.00
+          <span class="text-muted">60min</span>
+          <br />
+          <span class="deposit-required">Deposit Required: $20.00</span>
+        </div>
+        <input type="radio" name="treatment" value="glo-clear" class="form-check-input" />
+      </label>
+
+      <!-- Treatment 8 -->
+      <label class="list-group-item d-flex justify-content-between align-items-center treatment-option">
+        <div class="treatment-info">
+          <strong>Glo Firm Facial</strong>
+          <br />
+          $165.00
+          <span class="text-muted">60min</span>
+        </div>
+        <input type="radio" name="treatment" value="glo-firm" class="form-check-input" />
+      </label>
+
+      <!-- Treatment 9 -->
+      <label class="list-group-item d-flex justify-content-between align-items-center treatment-option">
+        <div class="treatment-info">
+          <strong>Glo Signature Facial</strong>
+          <br />
+          $180.00
+          <span class="text-muted">80min</span>
+          <br />
+          <span class="deposit-required">Deposit Required: $20.00</span>
+        </div>
+        <input type="radio" name="treatment" value="glo-signature" class="form-check-input" />
+      </label>
+
+      <!-- Treatment 10 -->
+      <label class="list-group-item d-flex justify-content-between align-items-center treatment-option">
+        <div class="treatment-info">
+          <strong>Pregnancy Facial</strong>
+          <br />
+          $180.00
+          <span class="text-muted">80min</span>
+          <br />
+          <span class="deposit-required">Deposit Required: $20.00</span>
+        </div>
+        <input type="radio" name="treatment" value="pregnancy" class="form-check-input" />
+      </label>
+
+      <!-- Treatment 11 -->
+      <label class="list-group-item d-flex justify-content-between align-items-center treatment-option">
+        <div class="treatment-info">
+          <strong>Flower Enzyme Chemical Peel</strong>
+          <br />
+          $180.00
+          <span class="text-muted">60min</span>
+        </div>
+        <input type="radio" name="treatment" value="flower-enzyme" class="form-check-input" />
+      </label>
+
+      <!-- Treatment 12 -->
+      <label class="list-group-item d-flex justify-content-between align-items-center treatment-option">
+        <div class="treatment-info">
+          <strong>Glypro AHA Resurfacing Chemical Peel</strong>
+          <br />
+          $180.00
+          <span class="text-muted">60min</span>
+        </div>
+        <input type="radio" name="treatment" value="glypro-aha" class="form-check-input" />
+      </label>
+
+      <!-- Treatment 13 -->
+      <label class="list-group-item d-flex justify-content-between align-items-center treatment-option">
+        <div class="treatment-info">
+          <strong>Hydra-Bright AHA Glow Peel</strong>
+          <br />
+          $180.00
+          <span class="text-muted">60min</span>
+        </div>
+        <input type="radio" name="treatment" value="hydra-bright-aha" class="form-check-input" />
+      </label>
+    </div>
+
+    <div class="text-center mt-4">
+      <button type="submit" class="btn btn-primary btn-lg">Proceed to Booking</button>
+    </div>
+  </form>
 </div>

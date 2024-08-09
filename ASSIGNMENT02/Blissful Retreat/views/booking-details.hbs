@@ -1,0 +1,71 @@
+<div class="container mt-5">
+  <h2 class="mb-4">I would like to book an appointment for</h2>
+  <div class="form-group">
+    <select class="form-control" id="appointmentFor">
+      <option value="just-me">Just Me</option>
+      <option value="someone-else">Someone Else</option>
+    </select>
+  </div>
+
+  <h3 class="my-4">SELECT A SERVICE</h3>
+  <div class="selected-service mb-4 p-3 border">
+    <div class="d-flex justify-content-between align-items-center">
+      <div>
+        <strong>Full Body Airbrush Tanning</strong>
+        <br />
+        <span>$60.00</span>
+        <br />
+        <span>30min</span>
+      </div>
+      <button type="button" class="btn btn-secondary">With</button>
+    </div>
+  </div>
+
+  <button type="button" class="btn btn-dark mb-4">+ Add Another Service</button>
+
+  <h3 class="my-4">SELECT DATE AND TIME</h3>
+  <div class="d-flex justify-content-between">
+    <div>
+      <div id="calendar" class="calendar-container">
+        <!-- Calendar will be rendered here by FullCalendar -->
+      </div>
+    </div>
+    <div class="available-slots-container border p-3">
+      <h5>Available slots for Thu, Aug 08 2024</h5>
+      <p class="text-danger">We're sorry, our appointment book is currently full. Please choose a different date or service.</p>
+      <button type="button" class="btn btn-dark">Join Waitlist for Thu, Aug 08 2024 ➔</button>
+    </div>
+  </div>
+</div>
+
+<!-- Initialize FullCalendar -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'dayGridMonth',
+      dateClick: function(info) {
+        // When a date is clicked, update the selected date and available slots
+        document.getElementById('selected-date').textContent = info.dateStr;
+        document.getElementById('waitlist-date').textContent = info.dateStr;
+
+        // Here you can make an AJAX request to fetch available slots for the selected date
+        // Example: fetchSlots(info.dateStr);
+
+        // For demonstration, update the slot container with dummy data
+        updateSlots(info.dateStr);
+      }
+    });
+    calendar.render();
+  });
+
+  // Function to update available slots (you can replace this with real data)
+  function updateSlots(dateStr) {
+    const slotsContainer = document.querySelector('.available-slots-container');
+    slotsContainer.innerHTML = `
+      <h5>Available slots for ${dateStr}</h5>
+      <p class="text-success">10:00 AM, 11:00 AM, 1:00 PM, 3:00 PM</p>
+      <button type="button" class="btn btn-dark">Book Slot for ${dateStr} ➔</button>
+    `;
+  }
+</script>
