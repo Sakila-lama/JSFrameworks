@@ -37,6 +37,26 @@ router.get('/booking-details', function(req, res) {
   res.render('booking-details', { treatment });
 });
 
+// GET route to fetch available slots for a selected date
+router.get('/available-slots', function(req, res) {
+  const date = req.query.date;
+
+  // Example: Fetch slots from your database based on the selected date
+  const slots = getAvailableSlots(date); 
+  res.json({ slots });
+});
+
+function getAvailableSlots(date) {
+  // Example logic to return available slots for a given date
+  // database here
+  const slots = {
+    "2024-08-08": ["10:00 AM", "11:00 AM", "1:00 PM", "3:00 PM"],
+    "2024-08-09": ["9:00 AM", "12:00 PM", "2:00 PM"],
+    // Add more dates and slots as needed
+  };
+
+  return slots[date] || [];
+}
 
 
 module.exports = router;
